@@ -4,16 +4,16 @@ import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { Routes, Route } from 'react-router-dom'
 import * as  publicContainer from './containers/public'
-import * as utils from './utils'
+import { path } from "./utils/path"
 
 function App() {
 
   return (
     <div>
       <Routes>
-        <Route path={utils.path.PUBLIC} element={<publicContainer.Public />}>
-          <Route path={utils.path.HOME} element={<publicContainer.Home />} />
-          <Route path={utils.path.LOGIN} element={<publicContainer.Login />} />
+        <Route path={path.PUBLIC} element={<publicContainer.Public />}>
+          <Route path={path.HOME} element={<publicContainer.Home />} />
+          <Route path={path.LOGIN} element={<publicContainer.Login />} />
         </Route>
       </Routes>
       <ToastContainer />
