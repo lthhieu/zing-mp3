@@ -8,9 +8,8 @@ export const Home = () => {
         dispatch(actions.getBanner())
     }, [])
     return (
-        <div className="overflow-y-auto px">
-            <div className="h-[70px] px-[2.5%] flex items-center"><components.Header /></div>
-            <div className='px-[2.5%] pt-[2.5%]'><components.Banner /></div>
+        <div className="">
+            <div><components.Banner /></div>
         </div>
     )
 }

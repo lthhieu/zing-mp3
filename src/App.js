@@ -14,6 +14,8 @@ function App() {
         <Route path={path.PUBLIC} element={<publicContainer.Public />}>
           <Route path={path.HOME} element={<publicContainer.Home />} />
           <Route path={path.LOGIN} element={<publicContainer.Login />} />
+          <Route path={path.PLAYLIST_TITLE_ID} element={<publicContainer.Playlist />} />
+          <Route path={path.ALBUM_TITLE_ID} element={<publicContainer.Playlist />} />
         </Route>
       </Routes>
       <ToastContainer />

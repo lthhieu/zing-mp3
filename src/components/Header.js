@@ -4,7 +4,7 @@ export const Header = () => {
     return (
         <div className="flex justify-between w-full items-center">
             <div className="flex gap-6 items-center w-[90%]">
-                <div className="flex text-gray-400 gap-1 w-[10%]">
+                <div className="flex text-txt-100 gap-1 w-[10%]">
                     <span><icons.BsArrowLeft size={24} /></span>&nbsp;
                     <span><icons.BsArrowRight size={24} /></span></div>
                 <div className="w-[90%]">
@@ -12,7 +12,7 @@ export const Header = () => {
                 </div>
             </div>
             <div className="w-[10%] flex justify-end">
-                <span title="Đăng nhập" className="text-gray-500 cursor-pointer">
+                <span title="Đăng nhập" className="text-txt-200 cursor-pointer">
                     <icons.BiLogInCircle size={24} />
                 </span>
             </div>
