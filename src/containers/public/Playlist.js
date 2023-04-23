@@ -18,7 +18,7 @@ export const Playlist = () => {
     return (<CustomScrollbar autoHide style={{ width: '100%', height: '80%' }}>
         <div className="flex flex-col">
             <div className="flex gap-4 w-full h-full">
-                <components.PlaylistLeft playlistData={playlistData} />
+                <components.PlayListLeft playlistData={playlistData} />
                 <components.PlayListRight playlistData={playlistData} />
             </div>
             <div className="my-10">

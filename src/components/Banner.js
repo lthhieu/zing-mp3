@@ -2,6 +2,7 @@ import { useSelector, useDispatch } from "react-redux"
 import { useEffect } from "react"
 import * as actions from '../store/actions'
 import { useNavigate } from "react-router-dom"
+import { emitter } from "../utils/Emitter"
 export const Banner = () => {
     useEffect(() => {
         let bannerItems = document.getElementsByClassName('handle-banner-items')
@@ -52,6 +53,7 @@ export const Banner = () => {
     let handleClickBanner = (item) => {
         if (item?.type === 1) {
             dispatch(actions.setSongId(item.encodeId))
+            emitter.emit('STOP OR PLAY MUSIC')
         } else if (item?.type === 4) {
             let path = item?.link?.split('.')[0]
             navigate(path)

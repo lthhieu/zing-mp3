@@ -1,7 +1,7 @@
 import { icons } from "../utils/icons"
 import { memo } from "react"
 import moment from 'moment'
-const PlaylistLeft = (props) => {
+const PlayListLeft = (props) => {
     let { playlistData } = props
     return (
         <div className="flex-none w-1/3 flex flex-col gap-1 items-center justify-start">
@@ -23,4 +23,4 @@ const PlaylistLeft = (props) => {
         </div>
     )
 }
-export default memo(PlaylistLeft)
+export default memo(PlayListLeft)
